@@ -1,0 +1,126 @@
+package tech.mcwhirl.modules.impl.Player;
+
+import com.darkmagician6.eventapi.EventManager;
+import com.darkmagician6.eventapi.EventTarget;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockLiquid;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.network.play.client.C03PacketPlayer;
+import net.minecraft.util.BlockPos;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.MathHelper;
+import net.minecraft.util.Vec3;
+import tech.mcwhirl.events.EventUpdate;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class Scaffold extends Module {
+	
+	private boolean cooldown = false;
+
+	public Scaffold(String name, String displayName, int color, int keyBind, Category category) {
+		super(name, displayName, color, keyBind, category);
+	}
+	
+	@EventTarget
+	public void onUpdate(EventUpdate eventUpdate) {
+		BlockPos playerPos = new BlockPos(mc.thePlayer.posX,mc.thePlayer.getEntityBoundingBox().minY,mc.thePlayer.posZ);
+		if(mc.theWorld.isAirBlock(playerPos.add(0,-1,0))) {
+			if (isValidBlock(playerPos.add(0,-2,0))) {
+				place(playerPos.add(0, -1 ,0),EnumFacing.UP);
+				
+			} else if (isValidBlock(playerPos.add(-1,-1,0))) {
+				place(playerPos.add(0, -1, 0), EnumFacing.EAST);
+				
+			} else if (isValidBlock(playerPos.add(1,-1,0))) {
+				place(playerPos.add(0, -1, 0), EnumFacing.WEST);
+				
+			} else if (isValidBlock(playerPos.add(0,-1,-1))) {
+				place(playerPos.add(0, -1, 0), EnumFacing.SOUTH);
+				
+			} else if (isValidBlock(playerPos.add(0,-1,1))) {
+				place(playerPos.add(0, -1, 0), EnumFacing.NORTH);
+				
+				
+				
+				
+			} else if(isValidBlock(playerPos.add(1,-1,1))) {
+				if (isValidBlock(playerPos.add(0,-1,1))) {
+					place(playerPos.add(0, -1, 1), EnumFacing.NORTH);
+				}
+				place(playerPos.add(1,-1,1), EnumFacing.EAST);
+				
+				
+			} else if(isValidBlock(playerPos.add(-1,-1,1))) {
+				if (isValidBlock(playerPos.add(-1,-1,0))) {
+					place(playerPos.add(0, -1, 1), EnumFacing.WEST);
+				}
+				place(playerPos.add(1,-1,1), EnumFacing.SOUTH);
+				
+				
+			} else if(isValidBlock(playerPos.add(-1,-1,-1))) {
+				if (isValidBlock(playerPos.add(0,-1,-1))) {
+					place(playerPos.add(0, -1, -1), EnumFacing.SOUTH);
+				}
+				place(playerPos.add(-1,-1,1), EnumFacing.WEST);
+				
+				
+			} else if(isValidBlock(playerPos.add(1,-1,-1))) {
+				if (isValidBlock(playerPos.add(1,-1,0))) {
+					place(playerPos.add(1, -1, 0), EnumFacing.EAST);
+				}
+				place(playerPos.add(1,-1,-1), EnumFacing.NORTH);
+			}
+		}
+	}
+	
+	private boolean isValidBlock(BlockPos pos) {
+		Block block = mc.theWorld.getBlockState(pos).getBlock();
+		return (!(block instanceof BlockLiquid)) && (block.getMaterial() != Material.air);
+	}
+	
+	private void place(BlockPos pos, EnumFacing face) {
+		cooldown = true;
+		if (face == EnumFacing.UP) {
+			pos.add(0, -1, 0);
+		} else if (face == EnumFacing.NORTH) {
+			pos.add(0, 0, 1);
+		} else if (face == EnumFacing.EAST) {
+			pos.add(-1, 0, 0);
+		} else if (face == EnumFacing.SOUTH) {
+			pos = pos.add(0, 0, 1);
+		} else if (face == EnumFacing.WEST) {
+			pos.add(1, 0, 0);
+		}
+		
+		if ((mc.thePlayer.getHeldItem() != null) && ((mc.thePlayer.getHeldItem().getItem() instanceof ItemBlock))) {
+			mc.thePlayer.swingItem();
+			mc.playerController.func_178890_a(mc.thePlayer, mc.theWorld, mc.thePlayer.getHeldItem(), pos, face, new Vec3(0.5D, 0.5D, 0.5D));
+			double var4 = pos.getX() + 0.25D;double var6 = pos.getZ() + 0.25D - mc.thePlayer.posZ;
+			double var8 = pos.getY() + 0.25D - (mc.thePlayer.posY + mc.thePlayer.getEyeHeight());
+			double var14 = MathHelper.sqrt_double(var4 * var4 + var6 * var6);
+			float yaw = (float)(Math.atan2(var6, var4) * 180.0D / 3.141592653689793D) - 90.0F;
+			float pitch = (float)-(Math.atan2(var8, var14) * 180.0D / 3.141592653689793D);
+			int ticks = 0;
+			ticks++;
+			if (ticks >= 1000) {
+				ticks = 0;
+				mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer.C06PacketPlayerPosLook(mc.thePlayer.posX,mc.thePlayer.posY,mc.thePlayer.posZ,yaw,pitch,mc.thePlayer.onGround));
+				
+			}
+		}
+	}
+	
+	@Override
+	public void onEnable() {
+		EventManager.register(this);
+	}
+	
+	@Override
+	public void onDisable() {
+		EventManager.unregister(this);
+	}
+
+}

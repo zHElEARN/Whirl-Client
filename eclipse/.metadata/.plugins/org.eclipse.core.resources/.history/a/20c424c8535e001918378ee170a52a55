@@ -1,0 +1,48 @@
+package tech.mcwhirl.modules.impl.Render;
+
+import java.awt.Color;
+
+import com.darkmagician6.eventapi.EventManager;
+
+import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class ItemESP extends Module {
+
+	public ItemESP(String name, String displayName, int color, int keyBind, Category category) {
+		super(name, displayName, color, keyBind, category);
+	}
+	
+	@Override
+	public void onDisable() {
+		EventManager.unregister(this);
+		super.onDisable();
+	}
+	
+	@Override
+	public void onEnable() {
+		EventManager.register(this);
+		super.onEnable();
+	}
+
+	public void onRender() {
+		for (Object o : mc.theWorld.loadedEntityList) {
+			if (o instanceof EntityItem) {
+				EntityItem e = (EntityItem)o;
+			}
+		}
+		super.onRender();
+	}
+	
+	public void passive(EntityItem entityItem) {
+		 Color color = (Color) Color.GREEN;
+		 this.mc.getRenderManager();double x = entityItem.lastTickPosX + (entityItem.posX - entityItem.lastTickPosX) * this.mc.timer.renderPartialTicks - RenderManager.renderPosX;
+		 this.mc.getRenderManager();double y = entityItem.lastTickPosY + (entityItem.posY - entityItem.lastTickPosY) * this.mc.timer.renderPartialTicks - RenderManager.renderPosY;
+		 this.mc.getRenderManager();double z = entityItem.lastTickPosZ + (entityItem.posZ - entityItem.lastTickPosZ) * this.mc.timer.renderPartialTicks - RenderManager.renderPosZ;
+	}
+	
+}

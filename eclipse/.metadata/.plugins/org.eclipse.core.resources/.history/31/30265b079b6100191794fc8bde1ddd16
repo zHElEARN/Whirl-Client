@@ -1,0 +1,12 @@
+package tech.mcwhirl.settings;
+
+import de.Hero.settings.Setting;
+import tech.mcwhirl.modules.Module;
+
+public class SpeedTimer extends Setting {
+
+	public SpeedTimer(String name, Module parent, double dval, double min, double max, boolean onlyint) {
+		super(name, parent, dval, min, max, onlyint);
+	}
+
+}

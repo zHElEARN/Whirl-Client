@@ -1,0 +1,84 @@
+package tech.mcwhirl.modules;
+
+import net.minecraft.client.Minecraft;
+
+public class Module {
+	
+	private String name;
+	private String displayName;
+	private Category category;
+	
+	private int keyBind;
+	public boolean visible;
+	public static boolean colorMode = false;
+	public Minecraft mc = Minecraft.getMinecraft();
+	
+	boolean toggled;
+	
+	public Module(String name, String displayName, int keyBind, Category category) {
+		this.name = name;
+		this.displayName = displayName;
+		this.category = category;
+		this.keyBind = keyBind;
+		this.visible = true;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public boolean isCategory(Category category) {
+		return this.category == category;
+	}
+
+	public String getDisplayName() {
+		return displayName;
+	}
+
+	public void setDisplayName(String displayName) {
+		this.displayName = displayName;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+	public int getKeyBind() {
+		return keyBind;
+	}
+
+	public void setKeyBind(int keyBind) {
+		this.keyBind = keyBind;
+	}
+	
+	public boolean isEnabled() {
+		return toggled;
+	}
+	
+	public void toggle()
+	{
+		if (toggled) 
+		{
+			toggled = false;
+			onDisable();
+		}
+		else 
+		{
+			toggled = true;
+			onEnable();
+		}
+	}
+	
+	
+	public void onEnable() {};
+	public void onDisable() {};
+	
+}

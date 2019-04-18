@@ -1,0 +1,13 @@
+package tech.mcwhirl.modules.impl.Exploits;
+
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class AutoRespawn extends Module {
+
+	public AutoRespawn(String name, String displayName, int color, int keyBind, Category category) {
+		super(name, displayName, color, keyBind, category);
+		// TODO Auto-generated constructor stub
+	}
+
+}

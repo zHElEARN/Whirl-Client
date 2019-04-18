@@ -1,0 +1,15 @@
+package tech.mcwhirl.modules.impl.Combat;
+
+import org.lwjgl.input.Keyboard;
+
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class Test extends Module {
+
+	public Test() {
+		super("Test", "Test-Wdnmd", 0x66CDAA, Keyboard.KEY_L, category);
+		// TODO Auto-generated constructor stub
+	}
+
+}

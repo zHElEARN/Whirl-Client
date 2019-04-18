@@ -1,0 +1,9 @@
+package tech.mcwhirl.modules.impl.Render;
+
+import tech.mcwhirl.modules.Module;
+
+public class Fullbright extends Module {
+
+	
+	
+}

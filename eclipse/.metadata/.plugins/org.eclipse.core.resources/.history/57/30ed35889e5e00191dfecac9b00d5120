@@ -1,0 +1,11 @@
+package tech.mcwhirl.ui;
+
+public class Fonts {
+
+	public static UnicodeFontRenderer smallWhirl;
+	
+	public static void loadFonts() {
+		
+	}
+	
+}

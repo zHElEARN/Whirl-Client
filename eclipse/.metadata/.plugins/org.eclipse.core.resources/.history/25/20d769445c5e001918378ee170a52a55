@@ -1,0 +1,14 @@
+package tech.mcwhirl.commands;
+
+public abstract class Command {
+
+	private String name;
+	private String decription;
+	private Minecraft mc;
+	
+	public Command(String name, String decription) {
+		this.name = name;
+		this.decription = description;
+	}
+	
+}

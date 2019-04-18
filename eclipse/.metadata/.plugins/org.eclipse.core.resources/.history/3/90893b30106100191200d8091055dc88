@@ -1,0 +1,22 @@
+package tech.mcwhirl.commands.impl;
+
+import tech.mcwhirl.commands.Command;
+
+public class SaveBinds extends Command {
+
+	public SaveBinds(String name, String decription) {
+		super(name, decription);
+	}
+	
+	public String filePath;
+	
+	@Override
+	public void execute(String[] args) {
+		if (args.length != 0) {
+			msgWithPrefix("¡ìcParameter error: ¡ì7$save");
+			return;
+		}
+		
+	}
+
+}

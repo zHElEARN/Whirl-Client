@@ -1,0 +1,52 @@
+package tech.mcwhirl.modules;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import tech.mcwhirl.Whirl;
+import tech.mcwhirl.modules.impl.Combat.Test;
+import tech.mcwhirl.modules.impl.Movement.Sprint;
+import tech.mcwhirl.modules.impl.Movement.Step;
+import tech.mcwhirl.modules.impl.Render.Fullbright;
+
+public class ModuleManager {
+
+	public List<Module> modules = new ArrayList<Module>();
+	
+	public ModuleManager() {
+		addModule(new Step());
+		addModule(new Sprint());
+		addModule(new Fullbright("Fullbright","Fullbright",0xF53068));
+		
+		Whirl.instance.logger.Info("Loaded Modules: " + modules.size());
+	}
+	
+	public void addModule(Module module) {
+		this.modules.add(module);
+		Whirl.instance.logger.Loading("Module: " + module.getName());
+	}
+	
+	public List<Module> getModules() {
+		return modules;
+	}
+	
+	public Module getModuleByName(String moduleName) {
+		for (Module module : modules) {
+			if ((module.getName().trim().equalsIgnoreCase(moduleName)) || (module.toString().trim().equalsIgnoreCase(moduleName.trim()))) {
+				return module;
+			}
+		}
+		
+		return null;
+	}
+	
+	public Module getModule(Class <? extends Module> clazz) {
+		for (Module module : modules) {
+			if (module.getClass() == clazz) {
+				return module;
+			}
+		}
+		return null;
+	}
+	
+}

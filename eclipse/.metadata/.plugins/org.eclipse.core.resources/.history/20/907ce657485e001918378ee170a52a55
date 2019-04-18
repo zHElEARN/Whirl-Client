@@ -1,0 +1,19 @@
+package tech.mcwhirl.modules.impl.Movement;
+
+import org.lwjgl.input.Keyboard;
+
+import tech.mcwhirl.events.EventTick;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class Sprint extends Module {
+	
+	public Sprint() {
+		super("Sprint", "Sprint", 0x008B45, Keyboard.KEY_V, Category.MOVEMENT);
+	}
+	
+	public void onTick(EventTick event) {
+		
+	}
+	
+}

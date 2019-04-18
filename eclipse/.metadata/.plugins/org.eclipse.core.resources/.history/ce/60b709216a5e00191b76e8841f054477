@@ -1,0 +1,48 @@
+package tech.mcwhirl.commands;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.IChatComponent;
+import tech.mcwhirl.Whirl;
+
+public abstract class Command {
+
+	private String name;
+	private String decription;
+	private Minecraft mc;
+	
+	public Command(String name, String decription) {
+		this.name = name;
+		this.decription = decription;
+	}
+	
+	public abstract void execute(String[] args);
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDecription() {
+		return decription;
+	}
+
+	public void setDecription(String decription) {
+		this.decription = decription;
+	}
+
+	public static void msgWithoutPrefix(String msg) {
+		Object chat = new ChatComponentText(msg);
+		if (msg != null) {
+			Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage((IChatComponent)chat);
+		}
+	}
+	
+	public static void msgWithPrefix(String msg) {
+		msgWithoutPrefix(Whirl.instance.Client_Prefix + " "+ msg);
+	}
+
+}

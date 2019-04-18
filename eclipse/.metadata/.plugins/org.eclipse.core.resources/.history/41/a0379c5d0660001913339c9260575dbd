@@ -1,0 +1,73 @@
+package tech.mcwhirl.modules.impl.Combat;
+
+import java.util.Collection;
+
+import com.darkmagician6.eventapi.EventManager;
+import com.darkmagician6.eventapi.EventTarget;
+
+import net.minecraft.client.network.NetworkPlayerInfo;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import tech.mcwhirl.events.EventUpdate;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+import tech.mcwhirl.utils.TimeHelper;
+
+public class Killaura extends Module {
+
+	public TimeHelper hitdelay = new TimeHelper();
+	
+	public Killaura(String name, String displayName, int color, int keyBind, Category category) {
+		super(name, displayName, color, keyBind, category);
+	}
+
+	@EventTarget
+	public void onUpdate(EventUpdate event) {
+		for (Object e : mc.theWorld.loadedEntityList) {
+			if (e instanceof EntityLivingBase) {
+				if (e != mc.thePlayer) {
+					EntityLivingBase p = (EntityLivingBase)e;
+					
+					if (mc.thePlayer.getDistanceToEntity(p) <= 4.2D && p.isEntityAlive() && p.hurtTime < 1 && hitdelay.hasReached(30L) && !(p.getHealth() < 0) && (checkEntityID(p))) {
+						hitdelay.reset();
+					}
+				}
+			}
+		}
+	}
+	
+	public boolean checkEntityID(Entity entity) {
+		boolean check;
+		if (!(entity.getEntityId() > 1070000000 || entity.getEntityId() <= -1)) {
+			check = true;
+		} else {
+			check = false;
+		}
+
+		return check;
+	}
+
+	public boolean isPlayerValid(EntityLivingBase player) {
+		if (player instanceof EntityPlayer) {
+			Collection<NetworkPlayerInfo> playerInfos = this.mc.thePlayer.sendQueue.func_175106_d();
+			for (NetworkPlayerInfo info : playerInfos) {
+				if (info.func_178845_a().getName().matches(player.getName())) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	
+	@Override
+	public void onEnable() {
+		EventManager.register(this);
+	}
+	
+	@Override
+	public void onDisable() {
+		EventManager.unregister(this);
+	}
+	
+}

@@ -1,0 +1,5 @@
+package tech.mcwhirl.events;
+
+public class EventSentPacket implements Event, Cancallable {
+
+}

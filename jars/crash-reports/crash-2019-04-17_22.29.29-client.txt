@@ -1,0 +1,89 @@
+---- Minecraft Crash Report ----
+// Oops.
+
+Time: 19-4-17 ÏÂÎç10:29
+Description: Updating screen events
+
+java.lang.NullPointerException: Updating screen events
+	at tech.mcwhirl.commands.impl.LoadBinds.execute(LoadBinds.java:72)
+	at tech.mcwhirl.commands.CommandManager.execute(CommandManager.java:45)
+	at net.minecraft.client.entity.EntityPlayerSP.sendChatMessage(EntityPlayerSP.java:271)
+	at net.minecraft.client.gui.GuiScreen.func_175281_b(GuiScreen.java:481)
+	at net.minecraft.client.gui.GuiScreen.func_175275_f(GuiScreen.java:471)
+	at net.minecraft.client.gui.GuiChat.keyTyped(GuiChat.java:132)
+	at net.minecraft.client.gui.GuiScreen.handleKeyboardInput(GuiScreen.java:611)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:562)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1780)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1113)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:420)
+	at net.minecraft.client.main.Main.main(Main.java:114)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at tech.mcwhirl.commands.impl.LoadBinds.execute(LoadBinds.java:72)
+	at tech.mcwhirl.commands.CommandManager.execute(CommandManager.java:45)
+	at net.minecraft.client.entity.EntityPlayerSP.sendChatMessage(EntityPlayerSP.java:271)
+	at net.minecraft.client.gui.GuiScreen.func_175281_b(GuiScreen.java:481)
+	at net.minecraft.client.gui.GuiScreen.func_175275_f(GuiScreen.java:471)
+	at net.minecraft.client.gui.GuiChat.keyTyped(GuiChat.java:132)
+	at net.minecraft.client.gui.GuiScreen.handleKeyboardInput(GuiScreen.java:611)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:562)
+
+-- Affected screen --
+Details:
+	Screen name: net.minecraft.client.gui.GuiChat
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Zhe_Learn'/50, l='MpServer', x=541.13, y=47.00, z=356.62]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 584.00,64.00,166.00 - World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 529267 game time, 484662 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 8 total; [EntityBat['Bat'/311845, l='MpServer', x=468.56, y=26.69, z=420.70], EntityBat['Bat'/311847, l='MpServer', x=467.25, y=26.86, z=420.46], EntityBat['Bat'/291117, l='MpServer', x=621.32, y=24.01, z=309.58], EntityBat['Bat'/291118, l='MpServer', x=619.55, y=24.64, z=311.88], EntityBat['Bat'/266103, l='MpServer', x=583.26, y=36.53, z=324.40], EntityBat['Bat'/282812, l='MpServer', x=594.25, y=14.10, z=366.75], EntityPlayerSP['Zhe_Learn'/50, l='MpServer', x=541.13, y=47.00, z=356.62], EntityMinecartChest['container.minecart'/63, l='MpServer', x=592.50, y=24.06, z=378.50]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:393)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2814)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:442)
+	at net.minecraft.client.main.Main.main(Main.java:114)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_201, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 549805280 bytes (524 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 750 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 419.35, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)

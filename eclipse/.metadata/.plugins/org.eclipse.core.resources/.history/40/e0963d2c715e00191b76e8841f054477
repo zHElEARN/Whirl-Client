@@ -1,0 +1,9 @@
+package tech.mcwhirl.modules.impl.Combat;
+
+import tech.mcwhirl.modules.Module;
+
+public class NoKb extends Module {
+
+	
+	
+}

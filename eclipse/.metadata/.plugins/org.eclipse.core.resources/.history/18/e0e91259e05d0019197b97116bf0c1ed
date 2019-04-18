@@ -1,0 +1,23 @@
+package tech.mcwhirl.modules.impl.Movement;
+
+import org.lwjgl.input.Keyboard;
+import com.darkmagician6.eventapi.EventTarget;
+import tech.mcwhirl.events.EventUpdate;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+import tech.mcwhirl.utils.TimeHelper;
+
+public class Step extends Module {
+
+	public Step() {
+		super("Step", "Step", Keyboard.KEY_X, Category.MOVEMENT);
+	}
+	
+	TimeHelper time1 = new TimeHelper();
+	
+	@EventTarget
+	public void onUpdate(EventUpdate e) {
+		if ((mc.thePlayer.isCollidedHorizontally) && ((this.mc.gameSettings.keyBindForward.pressed) || (this.mc.gameSettings.keyBindBack.pressed) || (this.mc.gameSettings.keyBindRight) || (this.mc.gameSettings.keyBindLeft.pressed)) && ())
+	}
+
+}

@@ -1,0 +1,65 @@
+package tech.mcwhirl.modules;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.lwjgl.input.Keyboard;
+
+import tech.mcwhirl.Whirl;
+import tech.mcwhirl.modules.impl.Combat.ChestStealer;
+import tech.mcwhirl.modules.impl.Combat.NoKb;
+import tech.mcwhirl.modules.impl.Exploits.AutoRespawn;
+import tech.mcwhirl.modules.impl.Movement.Speed;
+import tech.mcwhirl.modules.impl.Movement.Sprint;
+import tech.mcwhirl.modules.impl.Movement.Step;
+import tech.mcwhirl.modules.impl.Player.FastPlace;
+import tech.mcwhirl.modules.impl.Render.Fullbright;
+import tech.mcwhirl.modules.impl.Render.ItemESP;
+
+public class ModuleManager {
+
+	public List<Module> modules = new ArrayList<Module>();
+	
+	public ModuleManager() {
+		addModule(new Step("Step", "Step", 0x00E5EE, Keyboard.KEY_X, Category.MOVEMENT));
+		addModule(new Sprint("Sprint", "Sprint", 0x008B45, Keyboard.KEY_V, Category.MOVEMENT));
+		addModule(new Fullbright("Fullbright","Fullbright",0xF53068,Keyboard.KEY_K,Category.RENDER));
+		addModule(new ItemESP("ItemESP","ItemESP",0xA83631,Keyboard.KEY_J,Category.RENDER));
+		addModule(new NoKb("NoKb", "AntiVelocity", 0xC33BFF, Keyboard.KEY_NONE, Category.COMBAT));
+		addModule(new AutoRespawn("AutoRespawn", "AutoRespawn", 0x0170AF, Keyboard.KEY_NONE,Category.EXPLOITS));
+		addModule(new FastPlace("FastPlace", "FastPlace", 0x835135, Keyboard.KEY_NONE, Category.PLAYER));
+		addModule(new ChestStealer("ChestStealer", "ChestStealer", 0x2980b9, Keyboard.KEY_NONE, Category.COMBAT));
+		addModule(new Speed("Speed", "Speed ¡ì7[¡ìfY-Port¡ì7]", 0x0170AF, Keyboard.KEY_NONE, Category.MOVEMENT));
+		
+		Whirl.instance.logger.Info("Loaded Modules: " + modules.size());
+	}
+	
+	public void addModule(Module module) {
+		this.modules.add(module);
+		Whirl.instance.logger.Loading("Module: " + module.getName());
+	}
+	
+	public List<Module> getModules() {
+		return modules;
+	}
+	
+	public Module getModuleByName(String moduleName) {
+		for (Module module : modules) {
+			if ((module.getName().trim().equalsIgnoreCase(moduleName)) || (module.toString().trim().equalsIgnoreCase(moduleName.trim()))) {
+				return module;
+			}
+		}
+		
+		return null;
+	}
+	
+	public Module getModule(Class <? extends Module> clazz) {
+		for (Module module : modules) {
+			if (module.getClass() == clazz) {
+				return module;
+			}
+		}
+		return null;
+	}
+	
+}

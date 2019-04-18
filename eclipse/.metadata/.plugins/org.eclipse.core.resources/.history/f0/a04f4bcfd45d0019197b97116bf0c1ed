@@ -1,0 +1,9 @@
+package tech.mcwhirl.utils;
+
+public class Logger {
+	
+	public void Loading(String text) {
+		
+	}
+	
+}

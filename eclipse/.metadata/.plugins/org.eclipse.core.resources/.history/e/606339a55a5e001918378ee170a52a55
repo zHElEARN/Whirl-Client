@@ -1,0 +1,29 @@
+package tech.mcwhirl.events;
+
+import com.darkmagician6.eventapi.events.Cancellable;
+import com.darkmagician6.eventapi.events.Event;
+
+import net.minecraft.network.Packet;
+
+public class EventSentPacket implements Event, Cancellable {
+	
+	private Packet packet;
+	private boolean cancel;
+	
+	public EventSentPacket(final Packet packet) {
+		this.packet = packet;
+	}
+
+	@Override
+	public boolean isCancelled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void setCancelled(boolean state) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

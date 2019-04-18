@@ -1,0 +1,13 @@
+package tech.mcwhirl.ui;
+
+import java.io.InputStream;
+
+public class Fonts {
+
+	public static UnicodeFontRenderer smallWhirl;
+	
+	public static void loadFonts() {
+		InputStream is = Fonts.class.getResourceAsStream("fonts/");
+	}
+	
+}

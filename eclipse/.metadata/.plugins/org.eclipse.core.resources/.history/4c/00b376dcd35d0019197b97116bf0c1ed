@@ -1,0 +1,12 @@
+package tech.mcwhirl.modules;
+
+public class Module {
+	
+	private String name;
+	private String displayName;
+	private Category category;
+	
+	private int keyBind;
+	public static booleam colorMode = false;
+	
+}

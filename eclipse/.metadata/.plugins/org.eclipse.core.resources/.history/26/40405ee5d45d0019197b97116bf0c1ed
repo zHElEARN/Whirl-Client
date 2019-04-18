@@ -1,0 +1,13 @@
+package tech.mcwhirl.utils;
+
+public class Logger {
+	
+	public void Loading(String text) {
+		System.out.println("Loading >" + text);
+	}
+	
+	public void Info(String text) {
+		
+	}
+	
+}

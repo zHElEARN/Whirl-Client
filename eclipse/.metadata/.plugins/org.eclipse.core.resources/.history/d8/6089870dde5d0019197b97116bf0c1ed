@@ -1,0 +1,11 @@
+package tech.mcwhirl.utils;
+
+public class TimeHelper {
+	
+	private static long lastMS = 0L;
+	
+	public boolean isDelayComplete(float f) {
+		
+	}
+	
+}

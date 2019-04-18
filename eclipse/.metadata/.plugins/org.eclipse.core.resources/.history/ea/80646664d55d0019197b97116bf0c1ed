@@ -1,0 +1,24 @@
+package tech.mcwhirl;
+
+import java.io.File;
+import org.apache.commons.io.filefilter.FalseFileFilter;
+import org.lwjgl.opengl.Display;
+
+public class Whirl {
+	
+	public static Whirl instance;
+	public String Client_Name = "Whirl";
+	public String Client_Version = "1.0";
+	public String Client_Author = "Beafty_win and Zhe_Learn";
+	public String Client_Prefix = ""
+	
+	public File directory;
+	
+	public void startClient() {
+		instance = this;
+		Display.setTitle(Client_Name + " " + Client_Version);
+		System.out.println(Client_Name + "is ready");
+		System.out.println("Coded by " + Client_Author);
+	}
+	
+}

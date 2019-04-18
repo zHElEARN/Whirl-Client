@@ -1,0 +1,20 @@
+package tech.mcwhirl.commands.impl;
+
+import tech.mcwhirl.commands.Command;
+
+public class LoadBinds extends Command {
+
+	public LoadBinds(String name, String decription) {
+		super(name, decription);
+	}
+
+	@Override
+	public void execute(String[] args) {
+		if (args.length != 0) {
+			msgWithPrefix("¡ìcParameter error: ¡ì7$load");
+			return;
+		}
+		
+	}
+	
+}

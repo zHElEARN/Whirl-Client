@@ -1,0 +1,41 @@
+package tech.mcwhirl.modules.impl.Movement;
+
+import org.lwjgl.input.Keyboard;
+
+import com.darkmagician6.eventapi.EventManager;
+import com.darkmagician6.eventapi.EventTarget;
+
+import tech.mcwhirl.events.EventUpdate;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class Sprint extends Module {
+	
+	public Sprint() {
+		super("Sprint", "Sprint", 0x008B45, Keyboard.KEY_V, Category.MOVEMENT);
+	}
+	
+	@EventTarget
+	public void onUpdate(EventUpdate event) {
+		if ((mc.thePlayer != null) && (mc.thePlayer.getFoodStats().getFoodLevel() > 6) &&
+			(!mc.gameSettings.keyBindSneak.pressed) && (
+			(mc.gameSettings.keyBindForward.pressed) || 
+			(mc.gameSettings.keyBindLeft.pressed) ||
+			(mc.gameSettings.keyBindRight.pressed) ||
+			(mc.gameSettings.keyBindBack.pressed))) {
+			mc.thePlayer.setSprinting(true);
+		}
+	}
+	
+	@Override
+	public void onEnable() {
+		EventManager.register(this);
+	}
+	
+	@Override
+	public void onDisable() {
+		EventManager.unregister(this);
+		mc.thePlayer.setSprinting(false);
+	}
+	
+}

@@ -1,0 +1,8 @@
+package tech.mcwhirl.events;
+
+import com.darkmagician6.eventapi.events.Cancellable;
+import com.darkmagician6.eventapi.events.Event;
+
+public class EventSentPacket implements Event, Cancellable {
+
+}

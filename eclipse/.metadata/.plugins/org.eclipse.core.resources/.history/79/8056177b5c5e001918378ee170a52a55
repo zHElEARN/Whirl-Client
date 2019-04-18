@@ -1,0 +1,36 @@
+package tech.mcwhirl.commands;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.ChatComponentText;
+import tech.mcwhirl.Whirl;
+
+public abstract class Command {
+
+	private String name;
+	private String decription;
+	private Minecraft mc;
+	
+	public Command(String name, String decription) {
+		this.name = name;
+		this.decription = decription;
+	}
+	
+	public abstract void execute(String[] args) {
+		
+	}
+	
+	public void sendChatWithPrefix(String message)
+	{
+		mc.thePlayer.addChatMessage(new ChatComponentText(Whirl.instance.Client_Prefix + message));
+	}
+	
+	public void sendChatError(String message)
+	{
+		mc.thePlayer.addChatMessage(new ChatComponentText(Whirl.instance.Client_Prefix + "¡ìcError:" + message));
+	}
+	
+	public void sendChatInfo(String message)
+	{
+		mc.thePlayer.addChatMessage(new ChatComponentText(Whirl.instance.Client_Prefix + "¡ìaInfo: ¡ìf" + message));
+	}
+}

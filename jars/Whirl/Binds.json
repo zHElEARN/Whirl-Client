@@ -1,0 +1,18 @@
+{
+    "Binds":[
+        {
+            "Speed":0,
+            "InventoryMove":38,
+            "ChestStealer":0,
+            "AutoRespawn":0,
+            "NoKb":0,
+            "FastPlace":0,
+            "Fullbright":24,
+            "ItemESP":36,
+            "Killaura":19,
+            "NoSlow":0,
+            "Sprint":47,
+            "Step":45
+        }
+    ]
+}

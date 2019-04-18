@@ -1,0 +1,25 @@
+package tech.mcwhirl.commands.impl;
+
+import tech.mcwhirl.Whirl;
+import tech.mcwhirl.commands.Command;
+import tech.mcwhirl.modules.Module;
+
+public class Modules extends Command {
+
+	public Modules(String name, String decription) {
+		super(name, decription);
+	}
+
+	@Override
+	public void execute(String[] args) {
+		if (args.length != 0) {
+			msgWithPrefix("¡ìcParameter error: ¡ì7$modules");
+			return;
+		}
+		msgWithPrefix("¡ìa-----------All modules-----------");
+		for (Module m : Whirl.instance.moduleManager.getModules()) {
+			msgWithPrefix("Test:" + (char)m.getKeyBind() + "  ¡ìeName:¡ìf" + m.getName() + "  ¡ìeCategory:¡ìf" + m.getCategory().toString());
+		}
+	}
+
+}

@@ -1,0 +1,20 @@
+package tech.mcwhirl.commands;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CommandManager {
+
+	private List<Command> commands = new ArrayList();
+	
+	public String Chat_Prefix = "$";
+	
+	public CommandManager() {
+		
+	}
+	
+	public void addCommand(String command) {
+		
+	}
+	
+}

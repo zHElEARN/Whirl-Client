@@ -1,0 +1,17 @@
+package tech.mcwhirl.modules.impl.Movement;
+
+import com.darkmagician6.eventapi.EventManager;
+
+import tech.mcwhirl.modules.Module;
+
+public class NoSlow extends Module {
+	@Override
+	public void onDisable() {
+		EventManager.unregister(this);
+	}
+	
+	@Override
+	public void onEnable() {
+		EventManager.register(this);
+	}
+}

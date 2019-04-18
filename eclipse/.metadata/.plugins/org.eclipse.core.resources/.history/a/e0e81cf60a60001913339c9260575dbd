@@ -1,0 +1,31 @@
+package tech.mcwhirl.commands.impl;
+
+import tech.mcwhirl.Whirl;
+import tech.mcwhirl.commands.Command;
+import tech.mcwhirl.modules.Module;
+
+public class Toggle extends Command {
+
+	public Toggle(String name, String decription) {
+		super(name, decription);
+	}
+
+	@Override
+	public void execute(String[] args) {
+		if (args.length != 1) {
+			msgWithPrefix("¡ìcParameter error: ¡ì7$toggle ¡ì2<Module>");
+			return;
+		}
+		
+		
+		try {
+			Whirl.instance.moduleManager.getModuleByName(args[0]).toggle();
+		} catch (Exception e) {
+			msgWithPrefix("¡ìcModule:¡ìa <" + args[0] + "> ¡ìcnot found!");
+			return;
+		}
+		boolean flag = Whirl.instance.moduleManager.getModuleByName(args[0]).isEnabled();
+		msgWithPrefix("¡ìaModule: ¡ì6 <" + args[0] + "> ¡ìcis " + (flag ? "Enable" : "Disable"));
+	}
+	
+}

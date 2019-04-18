@@ -1,0 +1,33 @@
+package tech.mcwhirl.modules.impl.Player;
+
+import com.darkmagician6.eventapi.EventManager;
+import com.darkmagician6.eventapi.EventTarget;
+
+import tech.mcwhirl.events.EventUpdate;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class FastPlace extends Module {
+
+	public FastPlace(String name, String displayName, int color, int keyBind, Category category) {
+		super(name, displayName, color, keyBind, category);
+	}
+	
+	@EventTarget
+	public void onUpdate(EventUpdate event) {
+		mc.rightClickDelayTimer = 0;
+	}
+	
+	@Override
+	public void onDisable() {
+		EventManager.unregister(this);
+		super.onDisable();
+	}
+	
+	@Override
+	public void onEnable() {
+		EventManager.register(this);
+		super.onEnable();
+	}
+	
+}

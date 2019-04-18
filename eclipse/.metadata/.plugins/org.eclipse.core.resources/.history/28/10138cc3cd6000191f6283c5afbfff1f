@@ -1,0 +1,41 @@
+package tech.mcwhirl.tabgui;
+
+import net.minecraft.client.gui.GuiScreen;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.utils.RenderHelper;
+
+public class TabGui extends GuiScreen {
+	
+	public static int selectedTab = 0;
+	public static int selectedModule = 0;
+	public static final int y = 200;
+	public static boolean collapsed = false;
+	
+	public static void drawTabGui() {
+		
+		int count = 1;
+		
+		for (Category category : Category.values()) {
+			
+			int color = 0xFF00EE76;
+			
+			if (collapsed) {
+				if (Category.values()[selectedTab].toString().equals(category.name())) {
+					color = 0xFF00EE76;
+				} else {
+					color = 0xFF37474F;
+				}
+			} else if (Category.values()[selectedTab].toString().equals(category.name())) {
+				color = 0xFF00EE76;
+			} else {
+				color = 0xFF37474F;
+			}
+			
+			RenderHelper.drawRect(4, ((count * 10) + y) + 2, 71, ((count * 10) + 12) + y, 0xFF212121);
+			
+			RenderHelper.drawRect(4, (count * 10) + y, 69, ((count * 10) + 10) + y, color);
+			
+		}
+	}
+	
+}

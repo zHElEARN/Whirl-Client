@@ -1,0 +1,30 @@
+package tech.mcwhirl.modules.impl.Exploits;
+
+import com.darkmagician6.eventapi.EventManager;
+import com.darkmagician6.eventapi.EventTarget;
+
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class AutoRespawn extends Module {
+
+	public AutoRespawn(String name, String displayName, int color, int keyBind, Category category) {
+		super(name, displayName, color, keyBind, category);
+	}
+	
+	@EventTarget
+	public void onUpdate(EventTarget event) {
+		mc.thePlayer.respawnPlayer();
+	}
+	
+	@Override
+	public void onEnable() {
+		EventManager.register(this);
+	}
+	
+	@Override
+	public void onDisable() {
+		EventManager.unregister(this);
+	}
+
+}

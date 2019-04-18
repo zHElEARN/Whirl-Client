@@ -1,0 +1,7 @@
+package tech.mcwhirl.modules.impl.Gui;
+
+import tech.mcwhirl.modules.Module;
+
+public class TabGUI extends Module {
+
+}

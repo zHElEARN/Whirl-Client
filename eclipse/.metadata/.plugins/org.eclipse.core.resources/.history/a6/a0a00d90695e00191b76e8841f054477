@@ -1,0 +1,18 @@
+package tech.mcwhirl.commands.impl;
+
+import tech.mcwhirl.commands.Command;
+
+public class Toggle extends Command {
+
+	public Toggle(String name, String decription) {
+		super(name, decription);
+	}
+
+	@Override
+	public void execute(String[] args) {
+		if (args.length != 1) {
+			msgWithPrefix(getDecription());
+		}
+	}
+	
+}

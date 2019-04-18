@@ -1,0 +1,97 @@
+package tech.mcwhirl.tabgui;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+import tech.mcwhirl.Whirl;
+import tech.mcwhirl.ui.Fonts;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+import tech.mcwhirl.utils.RenderHelper;
+import net.minecraft.client.gui.GuiScreen;
+
+public class TabGui extends GuiScreen {
+	public static int selectedTab = 0;
+	public static int selectedModule = 0;
+	public static final int y = 15;
+	public static boolean callapsed = false;
+	
+	public static void drawTabGui() {
+		int count = 1;
+		for (Category category : Category.values()) {
+			int color = 0xFF00EE76;
+			
+			if(callapsed) {
+				if (Category.values()[selectedTab].toString().equals(category.name())) {
+					color = 0xFF00EE76;
+				} else {
+					color = 0xFF37474F;
+				}
+			} else if (Category.values()[selectedTab].toString().equals(category.name())) {
+				color = 0xFF00EE76;
+			} else {
+				color = 0xFF37474F;
+			}
+			
+			RenderHelper.drawRect(4, ((count * 10) + y) + 2, 71, ((count * 10) + 12) + y, 0xFF212121);
+			
+			RenderHelper.drawRect(4, (count * 10) + y, 69, ((count * 10) + 10) + y, color);
+			
+			Fonts.tabWhirl.drawString(category.name(), 5, (count * 10) + y,0xFFFFFFFF);
+			
+			count++;
+		}
+		
+		if(callapsed) {
+			ArrayList<Module> modules = new ArrayList<Module>();
+			
+			for(Module m : Whirl.instance.moduleManager.getModules()) {
+				if (m.getCategory() == Category.values()[selectedTab]) {
+					modules.add(m);
+				}
+			}
+			
+			Collections.sort(modules, new Comparator<Module>() {
+				@Override
+				public int compare(Module m1,Module m2) {
+					return Integer.valueOf(Fonts.tabWhirl.getStringWidth(m2.getDisplayName())).compareTo(Integer.valueOf(Fonts.tabWhirl.getStringHeight(m1.getDisplayName())));
+				}	
+			});
+			
+			int fontColor = 0xFFFFFFFF;
+			int moduleCount = 1;
+			for(Module cat : modules) {
+				
+				if (cat.getDisplayName().indexOf("Speed ") != -1) {
+					
+				}
+				
+				int color = 0xFF37474F;
+				
+				if (modules.get(selectedModule).getDisplayName().equals(cat.getDisplayName())) {
+					if (cat.isEnabled()) {
+						color = 0xFF00EE76;
+						fontColor = 0xFF7FFF00;
+					} else {
+						color = 0xFF00EE76;
+						fontColor = 0xFFFFFFFF;
+					}
+				} else if(cat.isEnabled()) {
+					color = 0x6637474F;
+					fontColor = 0xFF76EE00;
+				} else {
+					// back
+					fontColor = 0xFFFFFFFF;
+					color = 0x6637474F;
+				}
+				
+				RenderHelper.drawRect(70, (10 * selectedTab) + (moduleCount * 10) + y, Fonts.tabWhirl.getStringWidth(modules.get(0).getDisplayName()) + 72, ((10 * selectedTab) + (moduleCount * 10) + 10) + y, color);
+				
+				Fonts.tabWhirl.drawString(cat.getDisplayName(), 71, ((10*selectedTab) + moduleCount * 10) + (y), fontColor);
+			
+				moduleCount++;
+			}
+		}
+	}
+}

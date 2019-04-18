@@ -1,0 +1,50 @@
+package tech.mcwhirl;
+
+import java.io.File;
+import org.apache.commons.io.filefilter.FalseFileFilter;
+import org.lwjgl.opengl.Display;
+
+import de.Hero.clickgui.ClickGUI;
+import de.Hero.settings.SettingsManager;
+import net.minecraft.client.Minecraft;
+import tech.mcwhirl.commands.CommandManager;
+import tech.mcwhirl.modules.ModuleManager;
+import tech.mcwhirl.ui.Fonts;
+import tech.mcwhirl.utils.Logger;
+
+public class Whirl {
+	
+	public static Whirl instance;
+	public String Client_Name = "Whirl";
+	public String Client_Version = "1.0";
+	public String Client_Author = "Beafty_win and Zhe_Learn";
+	public String Client_Prefix = "¡ì7[¡ì6Whirl¡ì7]";
+	public String Client_PlayerName = "Zhe_Learn";
+	public Logger logger;
+	public ModuleManager moduleManager;
+	public CommandManager commandManager;
+	public SettingsManager setmgr;
+	public ClickGUI clickgui;
+	
+	public File directory;
+	
+	public void startClient() {
+		instance = this;
+		Display.setTitle(Client_Name + " " + Client_Version);
+		System.out.println(Client_Name + "is ready");
+		System.out.println("Coded by " + Client_Author);
+		Fonts.loadFonts();
+		directory = new File(Minecraft.getMinecraft().mcDataDir,"Whirl");
+		
+		if (!directory.exists()) {
+			directory.mkdirs();
+		}
+		
+		logger = new Logger();
+		setmgr = new SettingsManager();
+		moduleManager = new ModuleManager();
+		commandManager = new CommandManager();
+		clickgui = new ClickGUI();
+	}
+	
+}

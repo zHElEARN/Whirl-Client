@@ -1,0 +1,12 @@
+package tech.mcwhirl.modules;
+
+public enum Category {
+	
+	COMBAT,
+	MOVEMENT,
+	PLAYER,
+	GUI,
+	EXPLOITS,
+	RENDER,
+	
+}

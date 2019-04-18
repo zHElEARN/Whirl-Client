@@ -1,0 +1,11 @@
+package tech.mcwhirl.utils;
+
+import org.lwjgl.input.Keyboard;
+
+public class KeyUtils {
+	public char getChar(int code) {
+		switch (code) {
+		case Keyboard.KEY_A: return 'A';
+		}
+	}
+}

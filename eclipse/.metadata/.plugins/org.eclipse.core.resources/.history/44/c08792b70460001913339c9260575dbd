@@ -1,0 +1,7 @@
+package tech.mcwhirl.modules.impl.Combat;
+
+import tech.mcwhirl.modules.Module;
+
+public class Killaura extends Module {
+
+}

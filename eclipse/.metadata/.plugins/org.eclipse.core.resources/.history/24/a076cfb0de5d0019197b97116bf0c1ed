@@ -1,0 +1,12 @@
+package tech.mcwhirl.utils;
+
+public class PlayerUtils {
+	
+	public static boolean aacdamage = false;
+	public static boolean aacdamagevalue;
+	
+	public static void damagePlayer(double value) {
+		aacdamage = true;
+	}
+	
+}

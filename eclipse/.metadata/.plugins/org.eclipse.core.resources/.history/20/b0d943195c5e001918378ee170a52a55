@@ -1,0 +1,9 @@
+package tech.mcwhirl.commands;
+
+public abstract class Command {
+
+	private String name;
+	private String decription;
+	private Minecraft mc;
+	
+}

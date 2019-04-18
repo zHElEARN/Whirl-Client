@@ -1,0 +1,372 @@
+[20:51:39] [Client thread/INFO]: Setting user: Player952
+[20:51:39] [Client thread/INFO]: (Session ID is token:0:Player952)
+[20:51:41] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:51:41] [Client thread/INFO]: Reloading ResourceManager: Default
+[20:51:41] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:51:41] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[20:51:41] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:51:41] [Thread-7/INFO]: OpenAL initialized.
+[20:51:42] [Sound Library Loader/INFO]: Sound engine started
+[20:51:43] [Client thread/ERROR]: Using missing texture, unable to load minecraft:mcpatcher/ctm/default/empty.png, java.io.FileNotFoundException
+[20:51:44] [Client thread/INFO]: Created: 512x512 textures-atlas
+[20:51:57] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[20:51:57] [Server thread/INFO]: Generating keypair
+[20:51:57] [Server thread/INFO]: Preparing start region for level 0
+[20:51:58] [Server thread/INFO]: Changing view distance to 8, from 10
+[20:51:58] [Server thread/INFO]: Player952[local:E:263f72f8] logged in with entity id 399 at (516.4149173860388, 52.015555072702206, 170.42971990168567)
+[20:51:58] [Server thread/INFO]: Player952 joined the game
+[20:52:14] [Server thread/INFO]: Player952 has just earned the achievement [Taking Inventory]
+[20:52:14] [Client thread/INFO]: [CHAT] Player952 has just earned the achievement [Taking Inventory]
+[20:52:22] [Client thread/INFO]: [CHAT] ¡ì7[¡ì6Whirl¡ì7] ¡ìaModule: ¡ì6 <sprint> ¡ìcis Enable
+[20:52:43] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:53:19] [Client thread/INFO]: [CHAT] ¡ì7[¡ì6Whirl¡ì7] ¡ìaModule: ¡ì6 <noslow> ¡ìcis Enable
+[20:53:28] [Server thread/INFO]: Saving and pausing game...
+[20:53:28] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:193) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:53:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[20:53:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[20:53:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[20:53:29] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:53:42] [Client thread/INFO]: [CHAT] ¡ì7[¡ì6Whirl¡ì7] ¡ìaModule: ¡ì6 <noslow> ¡ìcis Disable
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ì7[¡ì6Whirl¡ì7] ¡ìa-----------All modules-----------
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ìeName:¡ìf Speed  ¡ìeKey:¡ìf NONE
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ìeName:¡ìf ChestStealer  ¡ìeKey:¡ìf NONE
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ìeName:¡ìf AutoRespawn  ¡ìeKey:¡ìf NONE
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ìeName:¡ìf NoKb  ¡ìeKey:¡ìf NONE
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ìeName:¡ìf FastPlace  ¡ìeKey:¡ìf NONE
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ìeName:¡ìf Fullbright  ¡ìeKey:¡ìf K
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ìeName:¡ìf ItemESP  ¡ìeKey:¡ìf J
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ìeName:¡ìf NoSlow  ¡ìeKey:¡ìf NONE
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ìeName:¡ìf Sprint  ¡ìeKey:¡ìf V
+[20:53:46] [Client thread/INFO]: [CHAT] ¡ìeName:¡ìf Step  ¡ìeKey:¡ìf X
+[20:53:49] [Client thread/INFO]: [CHAT] ¡ì7[¡ì6Whirl¡ì7] ¡ìaModule: ¡ì6 <noslow> ¡ìcis Enable
+[20:53:51] [Server thread/INFO]: Saving and pausing game...
+[20:53:51] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:193) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:53:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[20:53:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[20:53:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[20:54:22] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:55:07] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:55:52] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:56:37] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:57:22] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:58:07] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:58:52] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[20:59:37] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:00:22] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:01:07] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:01:52] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:02:37] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:03:15] [Server thread/INFO]: Saving and pausing game...
+[21:03:15] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:193) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:03:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[21:03:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[21:03:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[21:03:36] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:04:21] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:05:06] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:05:51] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:06:36] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:07:21] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:08:06] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:699) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[21:08:50] [Client Shutdown Thread/INFO]: Stopping server
+[21:08:50] [Client Shutdown Thread/INFO]: Saving players
+[21:08:50] [Client Shutdown Thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
+java.lang.NullPointerException
+	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
+	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
+	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
+	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:477) [bin/:?]
+	at net.minecraft.server.integrated.IntegratedServer.stopServer(IntegratedServer.java:403) [bin/:?]
+	at net.minecraft.client.Minecraft.stopIntegratedServer(Minecraft.java:2962) [bin/:?]
+	at net.minecraft.client.main.Main$2.run(Main.java:110) [bin/:?]
+[13:01:14] [Client thread/INFO]: Setting user: Player666
+[13:01:14] [Client thread/INFO]: (Session ID is token:0:Player666)

@@ -1,0 +1,5 @@
+package tech.mcwhirl.modules.impl.Movement;
+
+public class NoSlow {
+
+}

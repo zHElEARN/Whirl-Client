@@ -1,0 +1,13 @@
+package tech.mcwhirl.modules.impl.Combat;
+
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class Test extends Module {
+
+	public Test() {
+		super("Test", "Test-Wdnmd", color, keyBind, category);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,37 @@
+package tech.mcwhirl.utils;
+
+import org.lwjgl.input.Keyboard;
+
+public class KeyUtils {
+	public char getChar(int code) {
+		switch (code) {
+		case Keyboard.KEY_A: return 'A';
+		case Keyboard.KEY_B: return 'B';
+		case Keyboard.KEY_C: return 'C';
+		case Keyboard.KEY_D: return 'D';
+		case Keyboard.KEY_E: return 'E';
+		case Keyboard.KEY_F: return 'F';
+		case Keyboard.KEY_G: return 'G';
+		case Keyboard.KEY_H: return 'H';
+		case Keyboard.KEY_I: return 'I';
+		case Keyboard.KEY_J: return 'J';
+		case Keyboard.KEY_K: return 'K';
+		case Keyboard.KEY_L: return 'L';
+		case Keyboard.KEY_M: return 'M';
+		case Keyboard.KEY_N: return 'N';
+		case Keyboard.KEY_O: return 'O';
+		case Keyboard.KEY_P: return 'P';
+		case Keyboard.KEY_Q: return 'A';
+		case Keyboard.KEY_R: return 'A';
+		case Keyboard.KEY_S: return 'A';
+		case Keyboard.KEY_T: return 'A';
+		case Keyboard.KEY_U: return 'A';
+		case Keyboard.KEY_V: return 'A';
+		case Keyboard.KEY_W: return 'A';
+		case Keyboard.KEY_X: return 'A';
+		case Keyboard.KEY_Y: return 'A';
+		case Keyboard.KEY_Z: return 'A';
+		}
+	}
+}
+.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ

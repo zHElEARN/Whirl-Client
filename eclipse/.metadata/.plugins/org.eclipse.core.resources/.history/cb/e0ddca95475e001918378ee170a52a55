@@ -1,0 +1,5 @@
+package tech.mcwhirl.events;
+
+public class EventTick {
+
+}

@@ -1,0 +1,57 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 19-4-16 ÏÂÎç1:18
+Description: Initializing game
+
+java.lang.NullPointerException: Initializing game
+	at tech.mcwhirl.modules.impl.Combat.Killaura.<init>(Killaura.java:24)
+	at tech.mcwhirl.modules.ModuleManager.<init>(ModuleManager.java:36)
+	at tech.mcwhirl.Whirl.startClient(Whirl.java:39)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:561)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:396)
+	at net.minecraft.client.main.Main.main(Main.java:114)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at tech.mcwhirl.modules.impl.Combat.Killaura.<init>(Killaura.java:24)
+	at tech.mcwhirl.modules.ModuleManager.<init>(ModuleManager.java:36)
+	at tech.mcwhirl.Whirl.startClient(Whirl.java:39)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:561)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.run(Minecraft.java:396)
+	at net.minecraft.client.main.Main.main(Main.java:114)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_201, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 767763720 bytes (732 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 750 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 419.35, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)

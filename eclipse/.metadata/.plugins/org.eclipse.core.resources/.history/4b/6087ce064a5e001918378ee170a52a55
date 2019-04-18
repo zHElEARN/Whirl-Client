@@ -1,0 +1,5 @@
+package tech.mcwhirl.modules.impl.Render;
+
+public class Fullbright {
+
+}

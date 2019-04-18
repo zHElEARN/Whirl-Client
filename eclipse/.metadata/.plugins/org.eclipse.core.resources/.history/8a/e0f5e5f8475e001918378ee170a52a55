@@ -1,0 +1,9 @@
+package tech.mcwhirl.modules.impl.Movement;
+
+import tech.mcwhirl.modules.Module;
+
+public class Sprint extends Module {
+	
+	
+	
+}

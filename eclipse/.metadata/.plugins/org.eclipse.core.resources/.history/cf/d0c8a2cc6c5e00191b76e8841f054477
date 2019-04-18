@@ -1,0 +1,26 @@
+package tech.mcwhirl.commands.impl;
+
+import tech.mcwhirl.Whirl;
+import tech.mcwhirl.commands.Command;
+import tech.mcwhirl.modules.Module;
+
+public class Toggle extends Command {
+
+	public Toggle(String name, String decription) {
+		super(name, decription);
+	}
+
+	@Override
+	public void execute(String[] args) {
+		if (args.length != 1) {
+			msgWithPrefix("¡ìcParameter error: ¡ì7$t ¡ì2<Module>");
+			return;
+		}
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+}

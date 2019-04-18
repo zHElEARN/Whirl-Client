@@ -1,0 +1,12 @@
+package tech.mcwhirl.modules.impl.Gui;
+
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class TabGUI extends Module {
+
+	public TabGUI(String name, String displayName, int color, int keyBind, Category category) {
+		super(name, displayName, color, keyBind, category);
+	}
+
+}

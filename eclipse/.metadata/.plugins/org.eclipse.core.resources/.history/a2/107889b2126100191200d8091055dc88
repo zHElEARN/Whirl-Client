@@ -1,0 +1,43 @@
+package tech.mcwhirl.commands.impl;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.stream.JsonWriter;
+
+import tech.mcwhirl.Whirl;
+import tech.mcwhirl.commands.Command;
+
+public class SaveBinds extends Command {
+
+	public SaveBinds(String name, String decription) {
+		super(name, decription);
+	}
+	
+	public String fileName;
+	
+	@Override
+	public void execute(String[] args) {
+		fileName = Whirl.instance.directory.getAbsolutePath();
+		if (args.length != 0) {
+			msgWithPrefix("¡ìcParameter error: ¡ì7$save");
+			return;
+		}
+		
+		fileName += "\\Binds.json";
+		System.out.println(fileName);
+		
+		Gson gson = new Gson();
+		try {
+			JsonWriter writer = new JsonWriter(new FileWriter(fileName));
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

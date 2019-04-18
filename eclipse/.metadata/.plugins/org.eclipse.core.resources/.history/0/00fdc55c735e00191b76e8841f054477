@@ -1,0 +1,5 @@
+package tech.mcwhirl.modules.impl.Exploits;
+
+public class AutoRespawn {
+
+}

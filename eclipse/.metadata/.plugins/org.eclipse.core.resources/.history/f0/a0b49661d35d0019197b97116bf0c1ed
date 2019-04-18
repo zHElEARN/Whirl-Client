@@ -1,0 +1,5 @@
+package tech.mcwhirl.modules;
+
+public enum Category {
+
+}

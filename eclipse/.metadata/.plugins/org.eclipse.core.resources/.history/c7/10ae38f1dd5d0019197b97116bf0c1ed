@@ -1,0 +1,7 @@
+package tech.mcwhirl.utils;
+
+public class TimeHelper {
+	
+	private static lastMS;
+	
+}
