@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="tech.mcwhirl.commands.CommandManager"/>
-<fullyQualifiedTypeName name="tech.mcwhirl.commands.impl.Toggle"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
-<fullyQualifiedTypeName name="net.minecraft.util.ChatComponentText"/>
-<fullyQualifiedTypeName name="net.minecraft.util.IChatComponent"/>
 <fullyQualifiedTypeName name="tech.mcwhirl.modules.impl.Combat.NoKb"/>
 <fullyQualifiedTypeName name="tech.mcwhirl.modules.impl.Exploits.AutoRespawn"/>
 <fullyQualifiedTypeName name="tech.mcwhirl.modules.impl.Player.FastPlace"/>
@@ -44,8 +35,6 @@
 <fullyQualifiedTypeName name="tech.mcwhirl.modules.impl.Gui.ClickGui"/>
 <fullyQualifiedTypeName name="tech.mcwhirl.modules.impl.Movement.Fly"/>
 <fullyQualifiedTypeName name="tech.mcwhirl.Whirl"/>
-<fullyQualifiedTypeName name="tech.mcwhirl.modules.Module"/>
-<fullyQualifiedTypeName name="com.darkmagician6.eventapi.EventTarget"/>
 <fullyQualifiedTypeName name="tech.mcwhirl.events.EventUpdate"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockLiquid"/>
@@ -55,9 +44,20 @@
 <fullyQualifiedTypeName name="net.minecraft.item.ItemBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.util.Vec3"/>
 <fullyQualifiedTypeName name="net.minecraft.util.MathHelper"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="com.darkmagician6.eventapi.EventManager"/>
 <fullyQualifiedTypeName name="net.minecraft.network.play.client.C03PacketPlayer"/>
 <fullyQualifiedTypeName name="tech.mcwhirl.modules.impl.Player.Scaffold"/>
+<fullyQualifiedTypeName name="tech.mcwhirl.utils.ColorUtils"/>
+<fullyQualifiedTypeName name="tech.mcwhirl.modules.Module"/>
+<fullyQualifiedTypeName name="com.darkmagician6.eventapi.EventTarget"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntityMob"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.passive.EntityAnimal"/>
+<fullyQualifiedTypeName name="tech.mcwhirl.modules.impl.Render.Tracers"/>
+<fullyQualifiedTypeName name="tech.mcwhirl.utils.RenderUtils"/>
+<fullyQualifiedTypeName name="tech.mcwhirl.modules.impl.Render.ESP"/>
 <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
 </qualifiedTypeNameHistroy>

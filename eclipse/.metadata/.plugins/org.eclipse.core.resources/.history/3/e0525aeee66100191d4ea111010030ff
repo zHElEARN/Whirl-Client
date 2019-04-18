@@ -1,0 +1,64 @@
+package tech.mcwhirl.modules.impl.Render;
+
+import net.minecraft.entity.EntityLivingBase;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class ESP extends Module {
+
+	public ESP(String name, String displayName, int color, int keyBind, Category category) {
+		super(name, displayName, color, keyBind, category);
+	}
+
+	public void player(EntityLivingBase entity) {
+		float red = 0.5F;
+		float green = 0.5F;
+		float blue = 1F;
+		
+		double xPos = (entity.lastTickPosX + (entity.posX - entity.lastTickPosX) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosX;
+		double yPos = (entity.lastTickPosY + (entity.posY - entity.lastTickPosY) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosY;
+		double zPos = (entity.lastTickPosZ + (entity.posZ - entity.lastTickPosZ) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosZ;
+	
+		render(red, green, blue, xPos, yPos, zPos);
+	}
+	
+	public void mob(EntityLivingBase entity) {
+		float red = 0.5F;
+		float green = 0.5F;
+		float blue = 1F;
+		
+		double xPos = (entity.lastTickPosX + (entity.posX - entity.lastTickPosX) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosX;
+		double yPos = (entity.lastTickPosY + (entity.posY - entity.lastTickPosY) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosY;
+		double zPos = (entity.lastTickPosZ + (entity.posZ - entity.lastTickPosZ) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosZ;
+	
+		render(red, green, blue, xPos, yPos, zPos);
+	}
+	
+	public void animal(EntityLivingBase entity) {
+		float red = 0.5F;
+		float green = 1F;
+		float blue = 0.5F;
+		
+		double xPos = (entity.lastTickPosX + (entity.posX - entity.lastTickPosX) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosX;
+		double yPos = (entity.lastTickPosY + (entity.posY - entity.lastTickPosY) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosY;
+		double zPos = (entity.lastTickPosZ + (entity.posZ - entity.lastTickPosZ) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosZ;
+	
+		render(red, green, blue, xPos, yPos, zPos);
+	}
+	
+	public void passive(EntityLivingBase entity) {
+		float red = 0.5F;
+		float green = 0.5F;
+		float blue = 0.5F;
+		
+		double xPos = (entity.lastTickPosX + (entity.posX - entity.lastTickPosX) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosX;
+		double yPos = (entity.lastTickPosY + (entity.posY - entity.lastTickPosY) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosY;
+		double zPos = (entity.lastTickPosZ + (entity.posZ - entity.lastTickPosZ) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosZ;
+	
+		render(red, green, blue, xPos, yPos, zPos);
+	}
+	
+	public void render(float red, float green, float blue, float f, double xPos, double yPos, double zPos) {
+		
+	}
+}

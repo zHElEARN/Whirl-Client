@@ -1,0 +1,38 @@
+package tech.mcwhirl.modules.impl.Render;
+
+import net.minecraft.entity.EntityLivingBase;
+import tech.mcwhirl.modules.Category;
+import tech.mcwhirl.modules.Module;
+
+public class ESP extends Module {
+
+	public ESP(String name, String displayName, int color, int keyBind, Category category) {
+		super(name, displayName, color, keyBind, category);
+	}
+
+	public void player(EntityLivingBase entity) {
+		float red = 0.5F;
+		float green = 0.5F;
+		float blue = 1F;
+		
+		double xPos = (entity.lastTickPosX + (entity.posX - entity.lastTickPosX) * mc.timer.renderPartialTicks) - mc.getRenderManager().renderPosX;
+	}
+	
+	public void mob(EntityLivingBase entity) {
+		float red = 0.5F;
+		float green = 0.5F;
+		float blue = 1F;
+	}
+	
+	public void animal(EntityLivingBase entity) {
+		float red = 0.5F;
+		float green = 1F;
+		float blue = 0.5F;
+	}
+	
+	public void passive(EntityLivingBase entity) {
+		float red = 0.5F;
+		float green = 0.5F;
+		float blue = 0.5F;
+	}
+}

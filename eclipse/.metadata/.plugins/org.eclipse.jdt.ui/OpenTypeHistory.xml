@@ -3,5 +3,8 @@
 <typeInfo handle="=Client/jars\/versions\/1.8\/1.8.jar&lt;net.minecraft.client.main(Main.class[Main" modifiers="33" timestamp="1555144115704"/>
 <typeInfo handle="=Client/src&lt;net.minecraft.client.main{Main.java[Main" modifiers="1" timestamp="1555504047194"/>
 <typeInfo handle="=Client/src&lt;net.minecraft.client.entity{EntityPlayerSP.java[EntityPlayerSP" modifiers="1" timestamp="1555307751221"/>
-<typeInfo handle="=Client/src&lt;tech.mcwhirl.modules.impl.Gui{ClickGui.java[ClickGui" modifiers="1" timestamp="1555562480291"/>
+<typeInfo handle="=Client/src&lt;tech.mcwhirl.modules.impl.Gui{ClickGui.java[ClickGui" modifiers="1" timestamp="1555590835276"/>
+<typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiMainMenu.java[GuiMainMenu" modifiers="1" timestamp="1555249801755"/>
+<typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiButton.java[GuiButton" modifiers="1" timestamp="1555597223933"/>
+<typeInfo handle="=Client/src&lt;net.minecraft.client.gui{GuiIngame.java[GuiIngame" modifiers="1" timestamp="1555590817009"/>
 </typeInfoHistroy>

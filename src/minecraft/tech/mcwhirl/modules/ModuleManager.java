@@ -20,8 +20,10 @@ import tech.mcwhirl.modules.impl.Movement.Step;
 import tech.mcwhirl.modules.impl.Player.FastPlace;
 import tech.mcwhirl.modules.impl.Player.InventoryMove;
 import tech.mcwhirl.modules.impl.Player.Scaffold;
+import tech.mcwhirl.modules.impl.Render.ESP;
 import tech.mcwhirl.modules.impl.Render.Fullbright;
 import tech.mcwhirl.modules.impl.Render.ItemESP;
+import tech.mcwhirl.modules.impl.Render.Tracers;
 
 public class ModuleManager {
 
@@ -44,6 +46,8 @@ public class ModuleManager {
 		addModule(new HUD("HUD", "HUD", 0x3EBD58, Keyboard.KEY_NONE, Category.GUI));
 		addModule(new Fly("Fly", "Fly", 0x312F51, Keyboard.KEY_NONE, Category.MOVEMENT));
 		addModule(new Scaffold("Scaffold", "ScaffoldWalk", 0x5AF2E4, Keyboard.KEY_G, Category.PLAYER));
+		addModule(new Tracers("Tracers", "Tracers", 0xCAAA3A, Keyboard.KEY_NONE, Category.RENDER));
+		addModule(new ESP("ESP", "ESP", 0x4B20F5, Keyboard.KEY_NONE, Category.RENDER));
 		
 		Whirl.instance.logger.Info("Loaded Modules: " + modules.size());
 	}

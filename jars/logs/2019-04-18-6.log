@@ -1,83 +1,23 @@
-[20:31:21] [Client thread/INFO]: Setting user: Zhe_Learn
-[20:31:21] [Client thread/INFO]: (Session ID is token:0:Zhe_Learn)
-[20:31:22] [Client thread/INFO]: LWJGL Version: 2.9.1
-[20:31:23] [Client thread/INFO]: Reloading ResourceManager: Default
-[20:31:23] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[20:31:23] [Thread-7/INFO]: Initializing LWJGL OpenAL
-[20:31:23] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[20:31:23] [Thread-7/INFO]: OpenAL initialized.
-[20:31:23] [Sound Library Loader/INFO]: Sound engine started
-[20:31:25] [Client thread/ERROR]: Using missing texture, unable to load minecraft:mcpatcher/ctm/default/empty.png, java.io.FileNotFoundException
-[20:31:26] [Client thread/INFO]: Created: 512x512 textures-atlas
-[20:31:47] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[20:31:47] [Server thread/INFO]: Generating keypair
-[20:31:47] [Server thread/INFO]: Preparing start region for level 0
-[20:31:47] [Server thread/INFO]: Changing view distance to 8, from 10
-[20:31:48] [Server thread/INFO]: Zhe_Learn[local:E:559c6bdf] logged in with entity id 58 at (472.6283852975672, 74.0155550727022, 295.50867822622547)
-[20:31:48] [Server thread/INFO]: Zhe_Learn joined the game
-[20:31:51] [Server thread/INFO]: Saving and pausing game...
-[20:31:51] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
-java.lang.NullPointerException
-	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
-	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
-	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
-	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
-	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
-	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
-	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:193) [bin/:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
-[20:31:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[20:31:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[20:31:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[20:31:53] [Server thread/INFO]: Saving and pausing game...
-[20:31:53] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
-java.lang.NullPointerException
-	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
-	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
-	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
-	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
-	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
-	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
-	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:193) [bin/:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
-[20:31:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[20:31:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[20:31:53] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[20:32:04] [Server thread/INFO]: Saving and pausing game...
-[20:32:04] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
-java.lang.NullPointerException
-	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
-	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
-	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
-	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
-	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
-	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
-	at net.minecraft.server.management.ServerConfigurationManager.saveAllPlayerData(ServerConfigurationManager.java:841) [bin/:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:193) [bin/:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
-[20:32:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[20:32:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[20:32:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
-[20:32:32] [Client thread/INFO]: Stopping!
-[20:32:32] [Server thread/WARN]: Couldn't save statistic TranslatableComponent{key='achievement.exploreAllBiomes', args=[], siblings=[], style=Style{hasParent=false, color=¡ì5, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=HoverEvent{action=SHOW_ACHIEVEMENT, value='TextComponent{text='achievement.exploreAllBiomes', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}'}, insertion=null}}: error serializing progress
-java.lang.NullPointerException
-	at com.google.common.collect.ForwardingCollection.iterator(ForwardingCollection.java:59) ~[guava-17.0.jar:?]
-	at net.minecraft.util.JsonSerializableSet.getSerializableElement(JsonSerializableSet.java:38) ~[bin/:?]
-	at net.minecraft.stats.StatisticsFile.func_150880_a(StatisticsFile.java:192) [bin/:?]
-	at net.minecraft.stats.StatisticsFile.func_150883_b(StatisticsFile.java:69) [bin/:?]
-	at net.minecraft.server.management.ServerConfigurationManager.writePlayerData(ServerConfigurationManager.java:320) [bin/:?]
-	at net.minecraft.server.integrated.IntegratedPlayerList.writePlayerData(IntegratedPlayerList.java:35) [bin/:?]
-	at net.minecraft.server.management.ServerConfigurationManager.playerLoggedOut(ServerConfigurationManager.java:357) [bin/:?]
-	at net.minecraft.server.integrated.IntegratedServer$3.run(IntegratedServer.java:428) [bin/:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_201]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_201]
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:734) [bin/:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:678) [bin/:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:219) [bin/:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:561) [bin/:?]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_201]
+[22:18:41] [Client thread/INFO]: Setting user: Zhe_Learn
+[22:18:41] [Client thread/INFO]: (Session ID is token:0:Zhe_Learn)
+[22:18:42] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:18:43] [Client thread/INFO]: Reloading ResourceManager: Default
+[22:18:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:18:43] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[22:18:43] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:18:43] [Thread-7/INFO]: OpenAL initialized.
+[22:18:44] [Sound Library Loader/INFO]: Sound engine started
+[22:18:45] [Client thread/ERROR]: Using missing texture, unable to load minecraft:mcpatcher/ctm/default/empty.png, java.io.FileNotFoundException
+[22:18:45] [Client thread/INFO]: Created: 512x512 textures-atlas
+[22:19:37] [Client thread/INFO]: Stopping!
+[22:19:37] [Client thread/INFO]: SoundSystem shutting down...
+[22:19:37] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+1
+[22:19:37] [Client thread/INFO]: Reloading ResourceManager: Default
+[22:19:37] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:19:38] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[22:19:38] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:19:38] [Thread-6/INFO]: OpenAL initialized.
+[22:19:38] [Sound Library Loader/INFO]: Sound engine started
+[22:19:40] [Client thread/ERROR]: Using missing texture, unable to load minecraft:mcpatcher/ctm/default/empty.png, java.io.FileNotFoundException
+[22:19:40] [Client thread/INFO]: Created: 512x512 textures-atlas
